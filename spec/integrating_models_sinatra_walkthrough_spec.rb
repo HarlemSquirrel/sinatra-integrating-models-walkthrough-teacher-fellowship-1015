@@ -19,7 +19,7 @@ describe App do
       visit '/'
 
       fill_in(:user_text, :with => "Green Eggs and Ham")
-      click_button "submit"
+      find('input[type="submit"]').click
       expect(page).to have_text("Number of Words:4")
       expect(page).to have_text("Vowels:4")
       expect(page).to have_text("Consonants:8")
