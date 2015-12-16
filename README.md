@@ -35,6 +35,8 @@ We're not going to go deeply into creating models in this lesson, as you've cove
 
 class TextAnalyzer
 
+  attr_reader :text
+
   def initialize(text)
     @text = text
   end
